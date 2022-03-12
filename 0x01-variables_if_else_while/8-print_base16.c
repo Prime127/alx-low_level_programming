@@ -10,12 +10,12 @@ int main(void)
 		d++;
 	}
 
-	char c = 'a';
+	char C = 'a';
 
-	while (c <= 'f')
+	while (C <= 'f')
 	{
-		putchar(c);
-		c++;
+		putchar(C);
+		C++;
 	}
 
 	putchar('\n');
