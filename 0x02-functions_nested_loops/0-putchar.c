@@ -1,6 +1,14 @@
-#include <unistd.h>
+#include "main.h"
 
-int _putchar(char c)
+int main(void)
 {
-	return (write(1, &c, 1));
+char c[10] = "Holberton";
+int i = 0;
+while (i < 9)
+{
+_putchar(c[i]);
+i++;
+}
+_putchar('\n');
+return (0);
 }
