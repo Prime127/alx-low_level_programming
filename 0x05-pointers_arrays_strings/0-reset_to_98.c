@@ -1,12 +1,19 @@
-#include "main.h"
-#include <stdio.h>
+#include "mains.h"
 
-int main(void)
+/**
+ * reset_to_98 - reset to 98
+ * @n: input value
+ *
+ * Description: takes a pointer to an int as parameter and updates the value
+ * Return: Always (0)
+ */
+
+void reset_to_98(int *n)
 {
-    int n;
+	int *num;
 
-    n = 402;
-    printf("n=%d\n", n);
-    reset_to_98(&n);
-    printf("n=%d\n", n);
-    return (0);
+	int x = 98;
+
+	num = &x;
+	*n = *num;
+}
